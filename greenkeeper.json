@@ -1,0 +1,9 @@
+{
+  "groups": {
+    "styles": {
+      "packages": [
+        "styles/theme/package.json"
+      ]
+    }
+  }
+}

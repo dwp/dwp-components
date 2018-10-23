@@ -1,0 +1,28 @@
+{
+  "name": "theme",
+  "version": "0.0.1",
+  "description": "CSS-in-JS Shareable Styles built upon govuk-frontend Design System",
+  "bin": "bin/run.js",
+  "main": "src/index.js",
+  "scripts": {
+    "prebuild": "node scripts/generateRawTheme.js > src/raw.json && cp -r node_modules/govuk-frontend/assets/* assets/"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.9.3",
+    "sass-extract": "^2.1.0",
+    "sass-extract-js": "^0.4.0"
+  },
+  "dependencies": {
+    "camelcase": "^5.0.0",
+    "chalk": "^2.4.1",
+    "govuk-frontend": "^2.2.0",
+    "minimist": "^1.2.0",
+    "ncp": "^2.0.0",
+    "tagged-template-literals": "^1.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

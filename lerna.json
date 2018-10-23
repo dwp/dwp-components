@@ -1,0 +1,18 @@
+{
+  "packages": [
+    "styles/*",
+    "components/*"
+  ],
+  "command": {
+    "publish": {
+      "allowBranch": "master",
+      "message": "chore(release): publish %s"
+    }
+  },
+  "ignoreChanges": [
+    "**/__fixtures__/**",
+    "**/*.test.js",
+    "**/*.md"
+  ],
+  "version": "0.0.0"
+}

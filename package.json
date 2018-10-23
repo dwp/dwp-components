@@ -1,0 +1,62 @@
+{
+  "name": "govuk-components",
+  "private": true,
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-conventional": "^7.0.1",
+    "commitizen": "^2.10.1",
+    "conventional-changelog-angular": "^5.0.1",
+    "cross-env": "^5.2.0",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb": ">=17.0",
+    "eslint-config-prettier": ">=2.9",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": ">=2.6",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^0.14.3",
+    "jest": "^23.4.1",
+    "jest-circus": "^23.4.1",
+    "jest-junit": "^5.1.0",
+    "lerna": "^3.4.3",
+    "prettier": "^1.13.7"
+  },
+  "greenkeeper": {
+    "commitMessages": {
+      "initialBadge": "docs: :memo: add greenkeeper badge",
+      "initialDependencies": "chore: :gem: update dependencies",
+      "initialBranches": "build: :tada: whitelist greenkeeper branches",
+      "dependencyUpdate": "upgrade: :gem: update ${dependency} to version ${version}",
+      "devDependencyUpdate": "upgrade: :gem: update ${dependency} to version ${version}",
+      "dependencyPin": "fix: :bug: pin ${dependency} to ${oldversion}",
+      "devDependencyPin": "fix: :bug: pin ${dependency} to ${oldversion}"
+    },
+    "prTitles": {
+      "initialPR": "chore: update dependencies to enable greenkeeper",
+      "initialPrBadge": "chore: add badge to enable greenkeeper",
+      "initialPrBadgeOnly": "chore: add greenkeeper badge",
+      "initialSubgroupPR": "chore: update dependencies for ${group}",
+      "basicPR": "chore: update ${dependency} to the latest",
+      "groupPR": "chore: update ${dependency} in group ${group} to the latest"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "scripts": {
+    "commit": "npx git-cz",
+    "lerna": "lerna",
+    "lint": "eslint . --cache",
+    "pretest": "npm run lint",
+    "test": "cross-env NODE_ENV=test jest --coverage"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  extends: ["airbnb", "prettier"],
+  plugins: ["prettier"],
+  rules: {
+    "prettier/prettier": "error",
+    "import/no-extraneous-dependencies": "off"
+  },
+  env: {
+    node: true,
+    jest: true
+  }
+}

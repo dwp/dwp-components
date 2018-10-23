@@ -1,0 +1,8 @@
+# Generated assets from govuk-frontend library
+assets/fonts
+assets/images
+src/raw.json
+
+
+# Common JS/Node
+node_modules
