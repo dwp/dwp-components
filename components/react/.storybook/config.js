@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import { configure, addDecorator } from '@storybook/react';
 import { createGlobalStyle } from 'styled-components';
 import { withThemes } from 'storybook-styled-components';
@@ -10,10 +11,10 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const GlobalStyleDecorator = (storyFn) => (
-  <div>
+  <React.Fragment>
     <GlobalStyle />
     {storyFn()}
-  </div>
+  </React.Fragment>
 );
 
 // automatically import all files ending in *.stories.js from components
