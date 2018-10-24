@@ -1,13 +1,17 @@
-const palette = require('./palette');
-const typography = require('./typography');
-const spacing = require('./spacing');
-const media = require('./media');
-const helpers = require('./helpers');
+import typography from './typography';
 
-module.exports = {
-  palette,
+import spacing from './spacing';
+
+import palette from './palette';
+
+import * as helpers from './helpers';
+
+import * as media from './media';
+
+export default {
   typography,
   spacing,
-  media,
+  palette,
   helpers,
-};
+  media,
+}

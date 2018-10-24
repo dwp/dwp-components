@@ -6,7 +6,7 @@ import tinycolor from 'tinycolor2';
 
 const readable = color => tinycolor.mostReadable(color, ['#fff', '#000']).toHexString();
 
-const Theme = require('theme');
+import Theme from 'theme';
 
 const Frame = styled.div`
   margin: auto;

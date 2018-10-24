@@ -1,4 +1,4 @@
-module.exports = path => `
+export default path => `
   @font-face {
     font-family: "nta";
     src: url("${path}/light-2c037cf7e1-v1.eot");

@@ -1,11 +1,11 @@
-const { parsePx } = require('../utils');
+import { parsePx } from '../utils';
 
-const unit = require('./unit');
-const property = require('./property');
+import unit from './unit';
+import property from './property';
 
-const extracted = require('../raw.json');
+import extracted from '../raw.json';
 
-module.exports = {
+export default {
   unit,
   property,
   page: {

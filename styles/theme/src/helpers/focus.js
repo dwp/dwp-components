@@ -1,8 +1,8 @@
-const { contextLiteral } = require('../utils');
+import { contextLiteral } from '../utils';
 
-const extracted = require('../raw.json');
+import extracted from '../raw.json';
 
-module.exports = (fill = false) => contextLiteral(extracted)`
+export default (fill = false) => contextLiteral(extracted)`
   &:focus {
     outline-width: ${({ govukFocusWidth }) => govukFocusWidth};
     outline-style: solid;

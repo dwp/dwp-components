@@ -1,6 +1,6 @@
-const { filterKey } = require('../utils');
+import { filterKey } from '../utils';
 
-const extracted = require('../raw.json');
+import extracted from '../raw.json';
 
 const { govukColoursOrganisations, govukColours, ...css } = extracted;
 
@@ -10,7 +10,7 @@ const common = keys
   .filter(key => key.match(/.+Colour$/))
   .reduce((obj, key) => ({ ...obj, [filterKey(key).replace(/Colour$/, '')]: css[key] }), {});
 
-module.exports = {
+export default {
   common,
   organisations: govukColoursOrganisations,
   display: govukColours,

@@ -1,5 +1,5 @@
 const compile = require('tagged-template-literals');
-const theme = require('./src');
+const theme = require('./commonjs');
 
 console.log(JSON.stringify(theme, null, '  '));
 

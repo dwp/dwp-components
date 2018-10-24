@@ -1,10 +1,12 @@
-const { contextLiteral } = require('../utils');
+import { contextLiteral } from '../utils';
 
-const { govukBreakpoints } = require('../raw.json');
+import extracted from '../raw.json';
+
+const { govukBreakpoints } = extracted;
 
 const literal = contextLiteral(govukBreakpoints);
 
-module.exports = (device, context = {}) => (strings, ...values) => literal`
+export default (device, context = {}) => (strings, ...values) => literal`
   @media only screen and (min-width: ${({ [device]: val }) => val}) {
     ${contextLiteral(context)(strings, ...values)}
   }

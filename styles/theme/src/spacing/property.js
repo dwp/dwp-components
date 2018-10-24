@@ -1,11 +1,11 @@
-const { contextLiteral } = require('../utils');
-const { query } = require('../media');
+import { contextLiteral } from '../utils';
+import { query } from '../media';
 
-const unit = require('./unit');
+import unit from './unit';
 
 const spacing = (key, device, num) => `${key}: ${unit(num, device)};`;
 
-module.exports = (key, dirs) => {
+export default (key, dirs) => {
   if (typeof dirs === 'number') {
     return contextLiteral({})`
       ${spacing(key, 'mobile', dirs)}

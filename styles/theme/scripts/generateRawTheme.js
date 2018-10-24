@@ -2,7 +2,7 @@ const { resolve, basename, dirname } = require('path');
 const { existsSync } = require('fs');
 const sassExtract = require('sass-extract');
 
-const ALL = `${__dirname}/node_modules/govuk-frontend/all.scss`;
+const ALL = `${__dirname}/../node_modules/govuk-frontend/all.scss`;
 
 const importer = (url, prev) => {
   const filename = `_${basename(url)}.scss`;

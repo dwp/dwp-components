@@ -1,8 +1,8 @@
-const { contextLiteral } = require('../utils');
+import { contextLiteral } from '../utils';
 
-const extracted = require('../raw.json');
+import extracted from '../raw.json';
 
-module.exports = (context = {}) => (strings, ...values) => contextLiteral(extracted)`
+export default (context = {}) => (strings, ...values) => contextLiteral(extracted)`
   position: absolute;
   width: 1px;
   height: 1px;
@@ -22,7 +22,7 @@ module.exports = (context = {}) => (strings, ...values) => contextLiteral(extrac
     clip: auto;
     clip-path: none;
     white-space: inherit;
-    
+
     ${contextLiteral(context)(strings, ...values)}
   }
 `;

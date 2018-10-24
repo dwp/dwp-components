@@ -1,3 +1,3 @@
-exports.query = require('./query');
+export { default as query } from './query';
 
-exports.fontFace = require('./fontFace');
+export { default as fontFace } from './fontFace';

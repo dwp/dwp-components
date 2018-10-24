@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import { configure, addDecorator } from '@storybook/react';
+import { checkA11y } from '@storybook/addon-a11y';
 import { createGlobalStyle } from 'styled-components';
 import { withThemes } from 'storybook-styled-components';
 
-const Theme = require('theme');
+import Theme from 'theme';
 
 const GlobalStyle = createGlobalStyle`
   ${Theme.media.fontFace('fonts')}
@@ -29,6 +30,8 @@ function loadStories() {
 }
 
 addDecorator(withThemes({ theme: Theme }));
+
+addDecorator(checkA11y);
 
 addDecorator(GlobalStyleDecorator)
 

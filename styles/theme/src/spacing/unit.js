@@ -1,5 +1,7 @@
-const { mapResponsiveKey } = require('../utils');
+import { mapResponsiveKey } from '../utils';
 
-const { govukSpacingResponsiveScale: scale } = require('../raw.json');
+import extracted from '../raw.json';
 
-module.exports = (unit, display = 'tablet') => mapResponsiveKey(display, scale[unit.toString()]);
+const { govukSpacingResponsiveScale: scale } = extracted;
+
+export default (unit, display = 'tablet') => mapResponsiveKey(display, scale[unit.toString()]);

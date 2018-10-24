@@ -1,11 +1,11 @@
-const { contextLiteral, mapResponsiveKey } = require('../utils');
-const { query } = require('../media');
+import { contextLiteral, mapResponsiveKey } from '../utils';
+import { query } from '../media';
 
-const extracted = require('../raw.json');
+import extracted from '../raw.json';
 
 const compiled = contextLiteral(extracted);
 
-const fontFamily = (font = extracted.govukFontFamily) => compiled`
+export const fontFamily = (font = extracted.govukFontFamily) => compiled`
   font-family: ${font};
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -15,7 +15,7 @@ const fontFamily = (font = extracted.govukFontFamily) => compiled`
   }
 `;
 
-const font = (size, bold) => compiled`
+export const font = (size, bold) => compiled`
   font-weight: ${({ govukFontWeightBold, govukFontWeightRegular }) => (bold ? govukFontWeightBold : govukFontWeightRegular)};
 
   ${({ govukFontFamily }) => fontFamily(govukFontFamily)}
@@ -29,8 +29,3 @@ const font = (size, bold) => compiled`
     )
     .join('\n')}
 `;
-
-module.exports = {
-  font,
-  fontFamily,
-};

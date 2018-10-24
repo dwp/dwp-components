@@ -5,4 +5,6 @@ src/raw.json
 
 
 # Common JS/Node
-node_modules
+/node_modules
+/commonjs
+/esm

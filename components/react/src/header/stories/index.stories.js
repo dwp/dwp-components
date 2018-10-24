@@ -47,7 +47,7 @@ stories.add('With Navigation', withInfo(doc)(() => (
 stories.add('Department Logo', withInfo(doc)(() => (
   <Header>
     <Logo>
-      <img src="/dwp.png" />
+      <img alt="Logo" aria-label="Department for Work and Pensions" src="/dwp.png" />
     </Logo>
   </Header>
 )));
@@ -55,7 +55,7 @@ stories.add('Department Logo', withInfo(doc)(() => (
 stories.add('Department Logo & Navigation', withInfo(doc)(() => (
   <Header>
     <Logo>
-      <img src="/dwp.png" />
+      <img alt="Logo" aria-label="Department for Work and Pensions" src="/dwp.png" />
     </Logo>
     <Navigation.Container>
       <Navigation.Name href="#">

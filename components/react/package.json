@@ -12,16 +12,16 @@
     "esm"
   ],
   "scripts": {
+    "build": "npm run build-commonjs && npm run build-esm && npm run size",
     "build-commonjs": "BABEL_ENV=commonjs babel src --out-dir commonjs --ignore '**/stories','**/test' --source-maps inline",
     "build-esm": "BABEL_ENV=esm babel src --out-dir esm --ignore '**/stories','**/test' --source-maps inline",
     "build-storybook": "build-storybook -o docs",
     "size": "size-limit",
     "storybook": "start-storybook -s .storybook/public -p 6006",
-    "prepublish": "npm run build-commonjs && npm run build-esm && npm run size",
+    "prepublish": "npm run build",
     "prestorybook": "theme copy --destination .storybook/public/",
     "postbuild-storybook": "theme copy --destination docs/"
   },
-  "author": "",
   "license": "MIT",
   "dependencies": {
     "@babel/runtime": "^7.1.2",
@@ -41,8 +41,9 @@
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.0.0",
+    "@storybook/addon-a11y": "^4.0.0-alpha.25",
     "@storybook/addon-actions": "^4.0.0-rc.0",
-    "@storybook/addon-info": "^3.4.11",
+    "@storybook/addon-info": "^4.0.0-alpha.25",
     "@storybook/addon-knobs": "^4.0.0-rc.0",
     "@storybook/addon-links": "^4.0.0-rc.0",
     "@storybook/addons": "^4.0.0-rc.0",
@@ -60,6 +61,10 @@
   "size-limit": [
     {
       "path": "commonjs/index.js",
+      "limit": "100 KB"
+    },
+    {
+      "path": "esm/index.js",
       "limit": "100 KB"
     }
   ]

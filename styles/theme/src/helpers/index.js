@@ -1,11 +1,5 @@
-const arrow = require('./arrow');
+export { default as arrow } from './arrow';
 
-const focus = require('./focus');
+export { default as focus } from './focus';
 
-const visuallyHidden = require('./hidden');
-
-module.exports = {
-  arrow,
-  focus,
-  visuallyHidden,
-};
+export { default as visuallyHidden } from './hidden';

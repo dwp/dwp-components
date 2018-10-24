@@ -1,12 +1,12 @@
-const literal = require('tagged-template-literals');
-const camelCase = require('camelcase');
+import literal from 'tagged-template-literals';
+import camelCase from 'camelcase';
 
-exports.filterKey = key => camelCase(key.replace(/^govuk/, ''));
+export const filterKey = key => camelCase(key.replace(/^govuk/, ''));
 
-exports.contextLiteral = ctx => (strings, ...values) =>
+export const contextLiteral = ctx => (strings, ...values) =>
   literal(strings, values.map(val => (typeof val === 'function' ? val(ctx) : val)));
 
-exports.mapResponsiveKey = (device, obj) => {
+export const mapResponsiveKey = (device, obj) => {
   switch (device) {
     case 'desktop':
     case 'tablet':
@@ -18,4 +18,4 @@ exports.mapResponsiveKey = (device, obj) => {
   }
 };
 
-exports.parsePx = str => parseFloat(str, 10);
+export const parsePx = str => parseFloat(str, 10);

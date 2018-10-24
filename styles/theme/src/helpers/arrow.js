@@ -1,6 +1,6 @@
-const { contextLiteral } = require('../utils');
+import { contextLiteral } from '../utils';
 
-const extracted = require('../raw.json');
+import extracted from '../raw.json';
 
 const directions = {
   up: (height, perpendicular) => `
@@ -25,7 +25,7 @@ const directions = {
   `,
 };
 
-module.exports = ({ direction, base, display = 'block' }) => contextLiteral(extracted)`
+export default ({ direction, base, display = 'block' }) => contextLiteral(extracted)`
   display: ${display};
   width: 0;
   height: 0;

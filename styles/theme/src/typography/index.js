@@ -1,6 +1,6 @@
-const { font, fontFamily } = require('./helpers');
+import { font, fontFamily } from './helpers';
 
-module.exports = {
+export default {
   size: font,
   common: fontFamily,
   headings: {
