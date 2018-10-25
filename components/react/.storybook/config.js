@@ -5,6 +5,8 @@ import { checkA11y } from '@storybook/addon-a11y';
 import { createGlobalStyle } from 'styled-components';
 import { withThemes } from 'storybook-styled-components';
 
+import 'loki/configure-react';
+
 import Theme from 'theme';
 
 const GlobalStyle = createGlobalStyle`

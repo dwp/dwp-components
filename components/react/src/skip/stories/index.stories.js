@@ -5,6 +5,8 @@ import { withInfo } from '@storybook/addon-info';
 
 import { Skip } from '..';
 
+import { Paragraph } from '../../paragraph';
+
 import SkipReadme from '../README.md';
 
 const stories = storiesOf('⏩ Skip Link', module);
@@ -16,5 +18,8 @@ const doc = `
 `;
 
 stories.add('Link', withInfo(doc)(() => (
-  <Skip href="#">Skip to main content</Skip>
+  <React.Fragment>
+    <Skip href="#">Skip to main content</Skip>
+    <Paragraph.M>Tab to reveal the Skip component</Paragraph.M>
+  </React.Fragment>
 )));
