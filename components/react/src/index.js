@@ -10,6 +10,8 @@ export { Details } from './details';
 
 export { Footer } from './footer';
 
+export { Global } from './global';
+
 export { Header } from './header';
 
 export { Heading } from './heading';
