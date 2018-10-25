@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const Container = styled.div`
+import { Container as BasicContainer } from '../../container';
+
+const Container = styled(BasicContainer)`
   display: flex;
   align-items: flex-start;
   align-content: flex-start;
@@ -11,9 +13,6 @@ const Container = styled.div`
   border-bottom-width: ${({ theme }) => theme.spacing.unit(2)};
   border-bottom-style: solid;
   border-bottom-color: ${({ borderColor, theme }) => theme.palette.display[borderColor]};
-  margin-left: auto;
-  margin-right: auto;
-  max-width: ${({ theme }) => theme.spacing.page.width}px;
 `;
 
 Container.displayName = 'Header.Container';

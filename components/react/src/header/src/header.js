@@ -7,7 +7,7 @@ import Container from './container';
 const Header = styled.header`
   padding-top: 3px;
   ${({ theme }) => theme.typography.size(16)}
-  border-bottom-width: ${({ theme }) => theme.spacing.unit(2)}
+  border-bottom-width: ${({ theme }) => theme.spacing.unit(2)};
   border-bottom-style: solid;
   border-bottom-color: ${({ theme }) => theme.palette.display.white};
   color: ${({ theme }) => theme.palette.display.white};

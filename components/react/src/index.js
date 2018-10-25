@@ -6,6 +6,8 @@ export { Button } from './button';
 
 export { Caption } from './caption';
 
+export { Container } from './container';
+
 export { Details } from './details';
 
 export { Footer } from './footer';
