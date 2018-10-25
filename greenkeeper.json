@@ -4,6 +4,11 @@
       "packages": [
         "styles/theme/package.json"
       ]
+    },
+    "components": {
+      "packages": [
+        "components/react/package.json"
+      ]
     }
   }
 }
