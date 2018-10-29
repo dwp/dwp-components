@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import PropTypes from 'prop-types';
-import Theme from 'theme';
 
 const Fonts = createGlobalStyle`
   ${({ theme, fontPath }) => theme.media.fontFace(fontPath)}
@@ -24,8 +23,7 @@ Global.propTypes = {
 };
 
 Global.defaultProps = {
-  fontPath: 'fonts',
-  theme: Theme,
+  fontPath: 'fonts'
 };
 
 export default Global;

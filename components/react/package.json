@@ -1,5 +1,5 @@
 {
-  "name": "react-components",
+  "name": "dwp-react-components",
   "version": "0.0.1",
   "description": "GOV.UK Styled React Components",
   "engines": {
@@ -18,8 +18,8 @@
     "build-storybook": "build-storybook -o docs",
     "size": "size-limit",
     "storybook": "start-storybook -s .storybook/public -p 6006",
-    "prestorybook": "theme copy --destination .storybook/public/",
-    "postbuild-storybook": "theme copy --destination docs/",
+    "prestorybook": "dwp-theme copy --destination .storybook/public/",
+    "postbuild-storybook": "dwp-theme copy --destination docs/",
     "test-storybook": "loki test"
   },
   "license": "MIT",
@@ -27,10 +27,10 @@
     "@babel/runtime": "^7.1.2",
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "theme": "^0.0.1"
+    "react-dom": "^16.5.2"
   },
   "peerDependencies": {
+    "dwp-theme": "^0.0.1",
     "styled-components": "^4.0.0"
   },
   "devDependencies": {
@@ -56,6 +56,7 @@
     "babel-plugin-add-react-displayname": "^0.0.5",
     "babel-plugin-styled-components": "^1.8.0",
     "babel-runtime": "^6.26.0",
+    "dwp-theme": "^0.0.1",
     "loki": "^0.13.0",
     "size-limit": "^0.20.1",
     "storybook-readme": "^4.0.1",

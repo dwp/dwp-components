@@ -7,7 +7,7 @@ import { withThemes } from 'storybook-styled-components';
 
 import 'loki/configure-react';
 
-import Theme from 'theme';
+import Theme from 'dwp-theme';
 
 const GlobalStyle = createGlobalStyle`
   ${Theme.media.fontFace('fonts')}

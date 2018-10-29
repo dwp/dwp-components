@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { Container as BasicContainer } from '../../container';
+import { Container as ContentContainer } from '../../container';
 
-const Container = styled(BasicContainer)`
+const Container = styled(ContentContainer)`
   display: flex;
   align-items: flex-start;
   align-content: flex-start;

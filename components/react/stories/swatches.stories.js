@@ -6,7 +6,7 @@ import tinycolor from 'tinycolor2';
 
 const readable = color => tinycolor.mostReadable(color, ['#fff', '#000']).toHexString();
 
-import Theme from 'theme';
+import Theme from 'dwp-theme';
 
 const Frame = styled.div`
   margin: auto;

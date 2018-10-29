@@ -4,7 +4,17 @@ import PropTypes from 'prop-types';
 
 import Container from './container';
 
-const Header = styled.header`
+import { Container as ContentContainer } from '../../container';
+
+const Component = ({ children, className, borderColor }) => (
+  <header className={className}>
+    <Container borderColor={borderColor}>
+      {children}
+    </Container>
+  </header>
+);
+
+const Header = styled(Component)`
   padding-top: 3px;
   ${({ theme }) => theme.typography.size(16)}
   border-bottom-width: ${({ theme }) => theme.spacing.unit(2)};
@@ -12,25 +22,21 @@ const Header = styled.header`
   border-bottom-color: ${({ theme }) => theme.palette.display.white};
   color: ${({ theme }) => theme.palette.display.white};
   background-color: ${({ theme }) => theme.palette.display.black};
+
+  & + ${ContentContainer} {
+    ${({ theme }) => theme.spacing.property('margin-top', 6)}
+  }
 `;
 
-const HeaderComponent = ({ children, borderColor }) => (
-  <Header>
-    <Container borderColor={borderColor}>
-      {children}
-    </Container>
-  </Header>
-);
+Header.displayName = 'Header';
 
-HeaderComponent.displayName = 'Header';
-
-HeaderComponent.propTypes = {
+Header.propTypes = {
   children: PropTypes.node.isRequired,
   borderColor: PropTypes.string,
 };
 
-HeaderComponent.defaultProps = {
+Header.defaultProps = {
   borderColor: 'blue',
 };
 
-export default HeaderComponent;
+export default Header;

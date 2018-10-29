@@ -5,6 +5,8 @@ import { withInfo } from '@storybook/addon-info';
 
 import { Link } from '../../link';
 import { Header, Logo, Navigation } from '..';
+import { Container } from '../../container';
+import { Heading } from '../../heading';
 
 import HeaderReadme from '../README.md';
 
@@ -17,9 +19,14 @@ const doc = `
 `;
 
 stories.add('Default', withInfo(doc)(() => (
-  <Header>
-    <Logo href="#" name="GOV.UK" fallback="/images/govuk-logotype-crown.png" />
-  </Header>
+  <React.Fragment>
+    <Header>
+      <Logo href="#" name="GOV.UK" fallback="/images/govuk-logotype-crown.png" />
+    </Header>
+    <Container>
+      <Heading.XL>Service Name</Heading.XL>
+    </Container>
+  </React.Fragment>
 )));
 
 stories.add('With Navigation', withInfo(doc)(() => (
