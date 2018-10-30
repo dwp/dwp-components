@@ -14,7 +14,7 @@ export { Container } from './container';
 
 export { Details } from './details';
 
-export { Footer } from './footer';
+export * as Footer from './footer';
 
 export { Global } from './global';
 
@@ -31,6 +31,8 @@ export { Loader } from './loader';
 export { Paragraph } from './paragraph';
 
 export { Skip } from './skip';
+
+export * as Table from './table';
 
 export { Tag } from './tag';
 
