@@ -4,8 +4,6 @@ import PropTypes from 'prop-types';
 
 import Container from './container';
 
-import { Container as ContentContainer } from '../../container';
-
 const Component = ({ children, className, borderColor }) => (
   <header className={className}>
     <Container borderColor={borderColor}>
@@ -22,10 +20,6 @@ const Header = styled(Component)`
   border-bottom-color: ${({ theme }) => theme.palette.display.white};
   color: ${({ theme }) => theme.palette.display.white};
   background-color: ${({ theme }) => theme.palette.display.black};
-
-  & + ${ContentContainer} {
-    ${({ theme }) => theme.spacing.property('margin-top', 6)}
-  }
 `;
 
 Header.displayName = 'Header';
