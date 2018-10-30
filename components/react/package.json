@@ -1,6 +1,6 @@
 {
   "name": "dwp-react-components",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "GOV.UK Styled React Components",
   "engines": {
     "node": ">=8"

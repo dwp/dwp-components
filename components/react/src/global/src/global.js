@@ -1,15 +1,13 @@
 import React, { Fragment } from 'react';
-import { ThemeProvider, createGlobalStyle } from 'styled-components';
+import { ThemeProvider } from 'styled-components';
 import PropTypes from 'prop-types';
 
-const Fonts = createGlobalStyle`
-  ${({ theme, fontPath }) => theme.media.fontFace(fontPath)}
-`;
+import Root from './root';
 
 const Global = ({ children, theme, fontPath }) => (
   <ThemeProvider theme={theme}>
     <Fragment>
-      <Fonts fontPath={fontPath} />
+      <Root fontPath={fontPath} />
       {children}
     </Fragment>
   </ThemeProvider>

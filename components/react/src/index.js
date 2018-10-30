@@ -2,6 +2,8 @@ export { BackLink } from './backLink';
 
 export { Breadcrumbs } from './breadcrumbs';
 
+export { Break } from './break';
+
 export { Button } from './button';
 
 export { Caption } from './caption';
