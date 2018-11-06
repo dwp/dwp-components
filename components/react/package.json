@@ -1,6 +1,6 @@
 {
   "name": "dwp-react-components",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "description": "GOV.UK Styled React Components",
   "engines": {
     "node": ">=8"
@@ -27,11 +27,14 @@
     "@babel/runtime": "^7.1.2",
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "react-dom": "^16.5.2",
+    "react-vis": "^1.11.4"
   },
   "peerDependencies": {
     "dwp-theme": "^0.0.1",
-    "styled-components": "^4.0.0"
+    "styled-components": "^4.0.0",
+    "react-tabs": "^2.3.0",
+    "react-vis": "^1.11.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.2",
@@ -58,6 +61,8 @@
     "babel-runtime": "^6.26.0",
     "dwp-theme": "^0.0.1",
     "loki": "^0.13.0",
+    "react-tabs": "^2.3.0",
+    "react-vis": "^1.11.4",
     "size-limit": "^0.20.1",
     "storybook-readme": "^4.0.1",
     "storybook-styled-components": "^1.1.2",

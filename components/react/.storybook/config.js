@@ -1,23 +1,17 @@
 import React from 'react';
-import styled from 'styled-components';
 import { configure, addDecorator } from '@storybook/react';
 import { checkA11y } from '@storybook/addon-a11y';
-import { createGlobalStyle } from 'styled-components';
-import { withThemes } from 'storybook-styled-components';
 
 import 'loki/configure-react';
 
 import Theme from 'dwp-theme';
 
-const GlobalStyle = createGlobalStyle`
-  ${Theme.media.fontFace('fonts')}
-`;
+import { Global } from '../src'
 
 const GlobalStyleDecorator = (storyFn) => (
-  <React.Fragment>
-    <GlobalStyle />
+  <Global theme={Theme}>
     {storyFn()}
-  </React.Fragment>
+  </Global>
 );
 
 // automatically import all files ending in *.stories.js from components
@@ -30,8 +24,6 @@ function loadStories() {
   req.keys().forEach(filename => req(filename));
   stories.keys().forEach(filename => stories(filename));
 }
-
-addDecorator(withThemes({ theme: Theme }));
 
 addDecorator(checkA11y);
 

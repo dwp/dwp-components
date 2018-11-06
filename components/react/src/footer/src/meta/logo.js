@@ -7,6 +7,7 @@ const crestHeight = 102;
 
 const Logo = styled.a`
   display: inline-block;
+  color: #454a4c;
   min-width: ${crestWidth}px;
   padding-top: ${({ theme }) => parseInt(theme.spacing.unit(2), 10) + crestHeight}px;
   background-image: ${({ url }) => `url(${url})`};

@@ -22,7 +22,6 @@ const Skip = ({ children, ...props }) => (
 Skip.displayName = 'Skip';
 
 Skip.propTypes = {
-  id: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
 };
 

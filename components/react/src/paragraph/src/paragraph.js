@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import { Heading } from '../../heading';
 
 const InsetStyle = ({ inset, theme }) => {
-  console.log(theme);
   if (inset) {
     return `
       padding: ${theme.spacing.unit(3)};

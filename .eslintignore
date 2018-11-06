@@ -1,3 +1,9 @@
 node_modules
 example
 tmp
+
+components/**/commonjs
+components/**/esm
+
+styles/**/commonjs
+styles/**/esm
