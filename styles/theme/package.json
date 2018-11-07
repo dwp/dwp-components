@@ -48,8 +48,5 @@
     "minimist": "^1.2.0",
     "ncp": "^2.0.0",
     "tagged-template-literals": "^1.0.1"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

@@ -1,8 +1,8 @@
 # GOV.UK Shareable Styles
 
-This repository provides a framework agnostic theme for intended use alongside any [CSS-in-JS](#TODO) framework.
+This repository provides a framework agnostic theme for intended use alongside any object or tagged template literal framework.
 
-It contains properties and helpers, extracted directly from the SASS-authored [govuk-frontend](#TODO) library. If you're looking for the components, [click here](#TODO).
+It contains properties and helpers, extracted directly from the SASS-authored [govuk-frontend](#TODO) library. If you're looking for the components, [click here](/components/react).
 
 > The styles and variables included inside the `govuk-frontend` are automatically extracted at build time and **not** hardcoded into this library.
 
@@ -14,12 +14,12 @@ Add the library to your project as a dependency using:
 npm i TODO --save
 ```
 
-As part of your build process, ensure that the contents of the `assets/` folder (packaged inside the library) are copied over to your build destination. This can be achieved by adding a `postbuild` or `postinstall` script hook to your `package.json`
+If you need access to the GDS font and crown images, ensure that the contents of the `assets/` folder (packaged inside the library) are copied over to your build destination. This can be achieved by adding a `postbuild` or `postinstall` script hook to your `package.json`.
 
 ```json
 {
   "scripts": {
-    "postbuild": "TODO copy --destination ./build/static/"
+    "postbuild": "dwp-theme copy --destination ./build/static/"
   }
 }
 ```
@@ -33,19 +33,20 @@ Afterwards, be sure to add the asset paths for the library to your `.gitignore` 
 
 ---
 
-The library is implemented to ensure that it is easy to take advantage of [tagged template literals](#TODO), including numerous helpers designed at producing strings of CSS compatible with various pre-processing frameworks.
+The library is implemented to ensure that it is easy to take advantage of [tagged template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals), including numerous helpers designed at producing strings of CSS compatible with various pre-processing frameworks.
 
 ## Usage
 
 ```js
-const { typography } = require('TODO');
+const { typography } = require('dwp-theme');
+// OR: import { typography } from 'dwp-theme';
 
 console.log(typography.headings.xl());
 ```
 
 Using the XL typography heading helper as the example above demonstrates, produces the following valid css string:
 
-> Note how the helper makes zero assumptions about the class name or identifier. This responsibility is left to the implementing application or library.
+> Note how the helper makes zero assumptions about the class name or identifier. This responsibility is left to the implementing framework or library.
 
 ```css
 font-weight: 700;
