@@ -12,6 +12,7 @@
   "ignoreChanges": [
     "**/__fixtures__/**",
     "**/*.test.js",
+    "**/*.stories.jsx",
     "**/*.md"
   ],
   "version": "0.0.0"
