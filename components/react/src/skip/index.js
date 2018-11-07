@@ -1,1 +1,1 @@
-export { default as Skip } from './src/skip'
+export { default as Skip } from './src/skip';

@@ -1,17 +1,8 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
 
 import { Container } from '../../container';
 import { Tag } from '../../tag';
 import { Paragraph } from '../../paragraph';
-
-// const Component = ({ className, children }) => (
-//   <div className={className}>
-//     <Content>
-//       {children}
-//     </Content>
-//   </div>
-// )
 
 const Banner = styled(Container)`
   display: flex;
@@ -31,13 +22,5 @@ const Banner = styled(Container)`
 `;
 
 Banner.displayName = 'Banner';
-
-Banner.propTypes = {
-  // visible: PropTypes.bool,
-};
-
-Banner.defaultProps= {
-  // visible: false,
-};
 
 export default Banner;

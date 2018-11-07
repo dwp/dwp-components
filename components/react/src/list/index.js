@@ -1,1 +1,1 @@
-export * as List from './src/list'
+export * as List from './src/list';

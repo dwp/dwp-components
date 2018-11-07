@@ -9,10 +9,7 @@ const Content = styled.div`
   border-left-color: ${({ theme }) => theme.palette.common.border};
   border-left-style: solid;
 
-  & ${Paragraph.L},
-  & ${Paragraph.M},
-  & ${Paragraph.S},
-  & ${Paragraph.XS} {
+  & ${Paragraph.L}, & ${Paragraph.M}, & ${Paragraph.S}, & ${Paragraph.XS} {
     margin-top: 0;
     margin-bottom: ${({ theme }) => theme.spacing.unit(4)};
 

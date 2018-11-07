@@ -14,4 +14,4 @@ export default {
   palette,
   helpers,
   media,
-}
+};

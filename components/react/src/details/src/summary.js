@@ -4,9 +4,8 @@ import PropTypes from 'prop-types';
 const Summary = styled.summary`
   display: inline-block;
   margin-bottom: ${({ theme }) => theme.spacing.unit(2)};
-  padding-left: ${({ theme }) => (
-    parseInt(theme.spacing.unit(4), 10) + parseInt(theme.spacing.page.border.desktop, 10)
-  )}px;
+  padding-left: ${({ theme }) =>
+    parseInt(theme.spacing.unit(4), 10) + parseInt(theme.spacing.page.border.desktop, 10)}px;
   color: ${({ theme }) => theme.palette.common.link};
   cursor: pointer;
   position: relative;
@@ -35,7 +34,8 @@ const Summary = styled.summary`
     bottom: 0;
     left: 0;
     margin: auto;
-    ${({ revealed, theme }) => theme.helpers.arrow({ direction: revealed ? 'down' : 'right', base: 14 })}
+    ${({ revealed, theme }) =>
+      theme.helpers.arrow({ direction: revealed ? 'down' : 'right', base: 14 })};
   }
 `;
 
@@ -45,7 +45,7 @@ Summary.propTypes = {
   revealed: PropTypes.bool,
 };
 
-Summary.defaultProps ={
+Summary.defaultProps = {
   revealed: false,
 };
 

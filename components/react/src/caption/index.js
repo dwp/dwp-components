@@ -1,1 +1,1 @@
-export * as Caption from './src/caption'
+export * as Caption from './src/caption';

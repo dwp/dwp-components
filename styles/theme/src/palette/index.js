@@ -20,6 +20,6 @@ export default {
       text: 'rgb(255, 255, 255)',
       hover: 'rgb(0, 105, 47)',
       shadow: 'rgb(0, 54, 24)',
-    }
-  }
+    },
+  },
 };

@@ -13,7 +13,8 @@ const mutedStyle = ({ muted, theme }) => {
       }
     `;
   }
-}
+  return null;
+};
 
 const Link = styled.a`
   color: ${({ theme }) => theme.palette.common.link};
@@ -51,7 +52,7 @@ Link.propTypes = {
   muted: PropTypes.bool,
 };
 
-Link.defaultProps= {
+Link.defaultProps = {
   muted: false,
 };
 

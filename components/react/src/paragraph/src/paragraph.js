@@ -23,6 +23,7 @@ const InsetStyle = ({ inset, theme }) => {
       }
     `;
   }
+  return null;
 };
 
 const Common = styled.p`
@@ -39,7 +40,7 @@ Common.propTypes = {
 
 Common.defaultProps = {
   inset: false,
-}
+};
 
 const ResponsiveCommon = styled(Common)`
   & + ${Heading.L} {

@@ -1,1 +1,1 @@
-export { default as Details } from './src/details'
+export { default as Details } from './src/details';

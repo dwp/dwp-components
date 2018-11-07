@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 
 const Tag = styled.strong`
   color: ${({ theme }) => theme.palette.display.white};
-  ${({ theme }) => theme.typography.size(14, true)}
-  display: inline-block;
+  ${({ theme }) => theme.typography.size(14, true)} display: inline-block;
   line-height: 1.25;
   padding: 4px 8px 1px 8px;
   outline: solid 2px transparent;
@@ -21,7 +20,7 @@ Tag.propTypes = {
   background: PropTypes.string,
 };
 
-Tag.defaultProps= {
+Tag.defaultProps = {
   background: 'blue',
 };
 

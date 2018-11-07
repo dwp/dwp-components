@@ -1,1 +1,1 @@
-export * as Paragraph from './src/paragraph'
+export * as Paragraph from './src/paragraph';

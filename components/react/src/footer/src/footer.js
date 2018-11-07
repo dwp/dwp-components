@@ -1,10 +1,7 @@
-import React from 'react';
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
 
 import { Link } from '../../link';
 import { List } from '../../list';
-import { Heading } from '../../heading';
 
 const Footer = styled.footer`
   ${({ theme }) => theme.typography.size(16)}

@@ -1,1 +1,1 @@
-export * as Break from './src/break'
+export * as Break from './src/break';

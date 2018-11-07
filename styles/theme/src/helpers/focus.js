@@ -8,6 +8,6 @@ export default (fill = false) => contextLiteral(extracted)`
     outline-style: solid;
     outline-color: ${({ govukFocusColour }) => govukFocusColour};
     outline-offset: 0;
-    background-color: ${({ govukFocusColour }) => fill ? govukFocusColour : 'none'};
+    background-color: ${({ govukFocusColour }) => (fill ? govukFocusColour : 'none')};
   }
 `;

@@ -1,10 +1,7 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
 
 const BackLink = styled.a`
-  ${({ theme }) => theme.typography.common()}
-
-  display: inline-block;
+  ${({ theme }) => theme.typography.common()} display: inline-block;
   position: relative;
   margin-top: ${({ theme }) => theme.spacing.unit(3)};
   margin-bottom: ${({ theme }) => theme.spacing.unit(3)};
@@ -19,7 +16,7 @@ const BackLink = styled.a`
     bottom: -1px;
     left: 0;
     margin: auto;
-    ${({ theme }) => theme.helpers.arrow({ direction: 'left', base: 10 })}
+    ${({ theme }) => theme.helpers.arrow({ direction: 'left', base: 10 })};
   }
 
   &:link,
@@ -37,7 +34,7 @@ BackLink.propTypes = {
   // muted: PropTypes.bool,
 };
 
-BackLink.defaultProps= {
+BackLink.defaultProps = {
   // muted: false,
 };
 

@@ -7,7 +7,8 @@ const IsLead = ({ lead, theme }) => {
   if (lead) {
     return theme.spacing.property('margin-top', 6);
   }
-}
+  return null;
+};
 
 const Component = passthrough`
   display: block;

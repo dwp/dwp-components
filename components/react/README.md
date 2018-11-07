@@ -1,3 +1,7 @@
+# React Component Library
+
+Provides React framework specific implementations of the [styles/components](/styles/components) library.
+
 ## Visual Regression Testing
 <center>
 ![npm run storybook](test-storybook)

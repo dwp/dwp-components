@@ -15,10 +15,10 @@ const GlobalStyleDecorator = (storyFn) => (
 );
 
 // automatically import all files ending in *.stories.js from components
-const req = require.context('../src', true, /.stories.js$/);
+const req = require.context('../src', true, /.stories.jsx?$/);
 
 // import all other files which relate to the design system
-const stories = require.context('../stories', true, /.stories.js$/);
+const stories = require.context('../stories', true, /.stories.jsx?$/);
 
 function loadStories() {
   req.keys().forEach(filename => req(filename));

@@ -3,9 +3,7 @@ import PropTypes from 'prop-types';
 
 import { Link } from '../../link';
 
-const altitude = (size, border) => (
-  Math.sqrt(Math.pow(size + border, 2) + Math.pow(size + border, 2)) * 0.5
-);
+const altitude = (size, border) => Math.sqrt((size + border) ** 2 + (size + border) ** 2) * 0.5;
 
 export const Container = styled.ol`
   display: flex;
@@ -29,7 +27,8 @@ export const Item = styled.li`
   position: relative;
   margin-bottom: ${({ theme }) => theme.spacing.unit(1)};
   margin-left: ${({ theme }) => theme.spacing.unit(2)};
-  padding-left: ${({ size, border, theme }) => parseInt(theme.spacing.unit(2), 10) + altitude(size, border)}px;
+  padding-left: ${({ size, border, theme }) =>
+    parseInt(theme.spacing.unit(2), 10) + altitude(size, border)}px;
 
   &:before {
     content: '';

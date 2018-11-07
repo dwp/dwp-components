@@ -16,7 +16,7 @@ export default {
       desktop: parsePx(extracted.govukBorderWidth),
       wide: parsePx(extracted.govukBorderWidthWide),
       mobile: parsePx(extracted.govukBorderWidthMobile),
-    }
+    },
   },
   form: {
     element: {

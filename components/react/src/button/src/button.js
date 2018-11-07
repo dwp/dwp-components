@@ -15,7 +15,8 @@ const IconStyle = ({ icon, theme }) => {
       background-position: 100% 50%;
     `;
   }
-}
+  return null;
+};
 
 const Button = styled.button`
   ${({ theme }) => theme.typography.size(19)}
@@ -31,7 +32,10 @@ const Button = styled.button`
   border-bottom: 0;
   border-radius: 0;
   background-color: ${({ type, theme }) => theme.palette.buttons[type].background};
-  box-shadow: 0 ${({ theme }) => theme.spacing.form.element.border.default}px 0 ${({ type, theme }) => theme.palette.buttons[type].shadow};
+  box-shadow: 0 ${({ theme }) => theme.spacing.form.element.border.default}px 0 ${({
+  type,
+  theme,
+}) => theme.palette.buttons[type].shadow};
   text-align: center;
   vertical-align: top;
   cursor: pointer;
@@ -80,7 +84,10 @@ const Button = styled.button`
 
     &:active {
       top: 0;
-      box-shadow: 0 ${({ theme }) => theme.spacing.form.element.border.default}px 0 ${({ type, theme }) => theme.palette.buttons[type].shadow};
+      box-shadow: 0 ${({ theme }) => theme.spacing.form.element.border.default}px 0 ${({
+  type,
+  theme,
+}) => theme.palette.buttons[type].shadow};
     }
   }
 
@@ -94,7 +101,7 @@ Button.propTypes = {
   icon: PropTypes.string,
 };
 
-Button.defaultProps= {
+Button.defaultProps = {
   type: 'default',
   icon: null,
 };

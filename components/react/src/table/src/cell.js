@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const IsNumeric = ({ numeric, theme }) => {
+const IsNumeric = ({ numeric }) => {
   if (numeric) {
     return `
       text-align: right;
     `;
   }
+  return null;
 };
 
 const IsTableHeader = ({ header }) => {
@@ -15,6 +16,7 @@ const IsTableHeader = ({ header }) => {
       font-weight: 700;
     `;
   }
+  return null;
 };
 
 const Cell = styled.td`
@@ -25,9 +27,7 @@ const Cell = styled.td`
   padding-left: 0;
   text-align: left;
 
-  ${IsTableHeader}
-
-  ${IsNumeric}
+  ${IsTableHeader} ${IsNumeric}
 
   &:last-child {
     padding-right: 0;
@@ -41,7 +41,7 @@ Cell.propTypes = {
   header: PropTypes.bool,
 };
 
-Cell.defaultProps= {
+Cell.defaultProps = {
   numeric: false,
   header: false,
 };

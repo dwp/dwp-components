@@ -16,7 +16,8 @@ export const fontFamily = (font = extracted.govukFontFamily) => compiled`
 `;
 
 export const font = (size, bold) => compiled`
-  font-weight: ${({ govukFontWeightBold, govukFontWeightRegular }) => (bold ? govukFontWeightBold : govukFontWeightRegular)};
+  font-weight: ${({ govukFontWeightBold, govukFontWeightRegular }) =>
+    bold ? govukFontWeightBold : govukFontWeightRegular};
 
   ${({ govukFontFamily }) => fontFamily(govukFontFamily)}
 

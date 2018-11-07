@@ -18,7 +18,8 @@ const bulletedList = ({ bullet, theme } = {}) => {
       list-style: disc;
     `;
   }
-}
+  return null;
+};
 
 const numericalList = ({ numerical, theme } = {}) => {
   if (numerical) {
@@ -27,7 +28,8 @@ const numericalList = ({ numerical, theme } = {}) => {
       list-style-type: decimal;
     `;
   }
-}
+  return null;
+};
 
 const inlineList = ({ inline, theme } = {}) => {
   if (inline) {
@@ -38,9 +40,10 @@ const inlineList = ({ inline, theme } = {}) => {
       &:first-child {
         margin-left: 0;
       }
-    `
+    `;
   }
-}
+  return null;
+};
 
 export const List = styled.ul`
   margin-top: 0;
