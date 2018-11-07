@@ -14,9 +14,8 @@ matrix:
 
 stages:
   - lint-commit
-  - bootstrap
+  - test
   # - security-checks
-  - unit-tests
   # - regression
   - build
   # - deploy
@@ -24,27 +23,30 @@ stages:
 jobs:
   include:
     - stage: lint-commit
+      name: "Commit Lint"
       script:
         - npx @commitlint/travis-cli
 
-    - stage: bootstrap
+    - stage: test
+      name: "Bootstrap Packages"
       script:
         - npm run lerna bootstrap
 
-    # - stage: security-checks
-    #   script:
-    #     - npm audit
-    #     - npm run lerna exec npm audit
+    - name: "Audit Dependencies"
+      script:
+        - npm audit
+        - npm run lerna exec npm audit
 
-    - stage: unit-tests
+    - name: "Unit Tests"
       script:
         - npm test
 
-    # - stage: regression
-    #   script:
-    #     - npm run lerna run build-storybook
-    #     - npm run lerna run test-storybook -- -- --requireReference --reactUri file:./docs
+    - name: "Visual Regression Tests"
+      script:
+        - npm run lerna run build-storybook
+        - npm run lerna run test-storybook -- -- --requireReference --reactUri file:./docs
 
     - stage: build
       script:
+        - npm run lerna bootstrap
         - npm run lerna run build
