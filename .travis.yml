@@ -20,6 +20,10 @@ stages:
   - build
   # - deploy
 
+install:
+  - npm ci
+  - npm run lerna bootstrap
+
 jobs:
   include:
     - stage: lint-commit
@@ -28,25 +32,20 @@ jobs:
         - npx @commitlint/travis-cli
 
     - stage: test
-      name: "Bootstrap Packages"
-      script:
-        - npm run lerna bootstrap
-
-    - name: "Audit Dependencies"
-      script:
-        - npm audit
-        - npm run lerna exec npm audit
+    # - name: "Audit Dependencies"
+    #   script:
+    #     - npm audit
+    #     - npm run lerna exec npm audit
 
     - name: "Unit Tests"
       script:
         - npm test
 
-    - name: "Visual Regression Tests"
-      script:
-        - npm run lerna run build-storybook
-        - npm run lerna run test-storybook -- -- --requireReference --reactUri file:./docs
+    # - name: "Visual Regression Tests"
+    #   script:
+    #     - npm run lerna run build-storybook
+    #     - npm run lerna run test-storybook -- -- --requireReference --reactUri file:./docs
 
     - stage: build
       script:
-        - npm run lerna bootstrap
         - npm run lerna run build
