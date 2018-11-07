@@ -1,1 +1,1 @@
-export { default as Chart, withThemeProps } from './src/chart';
+export { default as Chart } from './src/chart';

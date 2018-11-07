@@ -1,6 +1,6 @@
 # DWP Styled Components
 
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/) [![Known Vulnerabilities](https://snyk.io/test/github/dwp/dwp-components/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dwp/dwp-components?targetFile=package.json)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/) [![Known Vulnerabilities](https://snyk.io/test/github/dwp/dwp-components/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dwp/dwp-components?targetFile=package.json) [![Build Status](https://travis-ci.org/dwp/dwp-components.svg?branch=master)](https://travis-ci.org/dwp/dwp-components)
 
 A set of shareable styles & component libraries, enabling you to start building user interfaces in React (and other frameworks).
 

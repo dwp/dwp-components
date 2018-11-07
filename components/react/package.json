@@ -20,7 +20,7 @@
     "storybook": "start-storybook -s .storybook/public -p 6006",
     "prestorybook": "dwp-theme copy --destination .storybook/public/",
     "postbuild-storybook": "dwp-theme copy --destination docs/",
-    "test-storybook": "loki test"
+    "test-storybook": "loki"
   },
   "license": "MIT",
   "dependencies": {

@@ -1,0 +1,46 @@
+language: node_js
+
+sudo: required
+
+services:
+  - docker
+
+matrix:
+  fast_finish: true
+
+stages:
+  - lint-commit
+  - bootstrap
+  # - security-checks
+  - unit-tests
+  # - regression
+  - build
+  # - deploy
+
+jobs:
+  include:
+    - stage: lint-commit
+      script:
+        - npx @commitlint/travis-cli
+
+    - stage: bootstrap
+      script:
+        - npm run lerna bootstrap
+
+    # - stage: security-checks
+    #   script:
+    #     - npm audit
+    #     - npm run lerna exec npm audit
+
+    - stage: unit-tests
+      script:
+        - npm test
+
+    # - stage: regression
+    #   script:
+    #     - npm run lerna run build-storybook
+    #     - npm run lerna run test-storybook -- -- --requireReference --reactUri file:./docs
+
+    - stage: build
+      script:
+        - npm run lerna run build
