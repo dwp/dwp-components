@@ -4,7 +4,7 @@ import { checkA11y } from '@storybook/addon-a11y';
 
 import 'loki/configure-react';
 
-import Theme from 'dwp-theme';
+import Theme from '@dwp/components-theme';
 
 import { Global } from '../src'
 

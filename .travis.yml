@@ -15,10 +15,7 @@ matrix:
 stages:
   - lint-commit
   - test
-  # - security-checks
-  # - regression
   - build
-  # - deploy
 
 install:
   - npm ci
@@ -27,25 +24,28 @@ install:
 jobs:
   include:
     - stage: lint-commit
-      name: "Commit Lint"
+      name: "📝 Commit Lint"
+      install: skip
       script:
         - npx @commitlint/travis-cli
 
     - stage: test
-    # - name: "Audit Dependencies"
+
+    # - name: "🔒 Audit Dependencies"
     #   script:
     #     - npm audit
     #     - npm run lerna exec npm audit
 
-    - name: "Unit Tests"
+    - name: "😇 Unit Tests"
       script:
         - npm test
 
-    # - name: "Visual Regression Tests"
+    # - name: "👀 Visual Regression Tests"
     #   script:
     #     - npm run lerna run build-storybook
     #     - npm run lerna run test-storybook -- -- --requireReference --reactUri file:./docs
 
     - stage: build
+      name: "🔨 Build"
       script:
         - npm run lerna run build

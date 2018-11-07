@@ -19,7 +19,7 @@ If you need access to the GDS font and crown images, ensure that the contents of
 ```json
 {
   "scripts": {
-    "postbuild": "dwp-theme copy --destination ./build/static/"
+    "postbuild": "@dwp/components-theme copy --destination ./build/static/"
   }
 }
 ```
@@ -38,8 +38,8 @@ The library is implemented to ensure that it is easy to take advantage of [tagge
 ## Usage
 
 ```js
-const { typography } = require('dwp-theme');
-// OR: import { typography } from 'dwp-theme';
+const { typography } = require('@dwp/components-theme');
+// OR: import { typography } from '@dwp/components-theme';
 
 console.log(typography.headings.xl());
 ```

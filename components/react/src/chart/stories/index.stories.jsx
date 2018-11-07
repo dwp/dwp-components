@@ -6,7 +6,7 @@ import Marked from 'storybook-readme/components/Marked';
 
 import { Chart } from '..';
 
-import Theme from 'dwp-theme';
+import Theme from '@dwp/components-theme';
 
 import Readme from '../README.md';
 

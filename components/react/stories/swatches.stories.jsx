@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react';
 import Marked from 'storybook-readme/components/Marked';
 import tinycolor from 'tinycolor2';
 
-import Theme from 'dwp-theme';
+import Theme from '@dwp/components-theme';
 
 const readable = color => tinycolor.mostReadable(color, ['#fff', '#000']).toHexString();
 
