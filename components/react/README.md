@@ -5,7 +5,7 @@ React framework specific implementations of the [styles/theme](/styles/theme) li
 _That said, all components are completely compatible with any pre-existing "SASS Loader" already present in your application, as the library exposes them as standard React components (a la "ready for styling")._
 
 ## Visual Regression Testing
-![](test-storybook)
+![](.github/images/test-storybook.min.gif)
 
 This library implements visual regression testing inside Storybook, testing each component inside a headless chrome browser (inside Docker) using [Loki](#TODO).
 
@@ -13,5 +13,3 @@ Before running the tests, ensure that Docker is running on your machine and you 
 
 #### Updating Reference Images
 When working on a component, it may break the test suite. To update the reference images, for a legitimate change, using `./node_modules/.bin/loki update`.
-
-[test-storybook]: .github/images/test-storybook.min.gif "Running tests with Loki"
