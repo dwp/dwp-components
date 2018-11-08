@@ -6,5 +6,5 @@ module.exports = {
   },
   testEnvironment: 'node',
   testRunner: 'jest-circus/runner',
-  transformIgnorePatterns: ['/node_modules/.+\\.js$'],
+  // transformIgnorePatterns: ['/node_modules/.+\\.js$'],
 };
