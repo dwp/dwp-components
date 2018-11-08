@@ -4,6 +4,17 @@ React framework specific implementations of the [styles/theme](/styles/theme) li
 
 _That said, all components are completely compatible with any pre-existing "SASS Loader" already present in your application, as the library exposes them as standard React components (a la "ready for styling")._
 
+## Getting Started
+
+> A short video example of setting up this library with `create-react-app` is coming soon.
+
+### Storybook
+![](.github/images/storybook.min.gif)
+
+All components inside this library have an accompanying storybook, helping you to navigate around each components particular implementation.
+
+Running the storybook locally couldn't be easier, once the repository has been cloned and set up ([see here](/README.md)), simply run `npm run storybook` and navigate to [http://localhost:6006]().
+
 ## Visual Regression Testing
 ![](.github/images/test-storybook.min.gif)
 
