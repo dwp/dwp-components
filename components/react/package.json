@@ -18,7 +18,7 @@
     "build-storybook": "build-storybook -o docs",
     "size": "size-limit",
     "storybook": "start-storybook -s .storybook/public -p 6006",
-    "prepare": "npm run build",
+    "prepack": "npm run build",
     "prestorybook": "components-theme copy --destination .storybook/public/",
     "postbuild-storybook": "components-theme copy --destination docs/",
     "test-storybook": "loki"
