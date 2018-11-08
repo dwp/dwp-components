@@ -1,7 +1,10 @@
 module.exports = {
+  moduleFileExtensions: ['js'],
   reporters: ['default', 'jest-junit'],
-  modulePathIgnorePatterns: ['/__fixtures__/'],
-  roots: ['<rootDir>/styles', '<rootDir>/components'],
+  transform: {
+    '^.+\\.jsx?$': 'babel-jest',
+  },
   testEnvironment: 'node',
   testRunner: 'jest-circus/runner',
+  transformIgnorePatterns: ['/node_modules/.+\\.js$'],
 };

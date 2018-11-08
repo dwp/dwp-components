@@ -1,2 +1,8 @@
+## Local Development Folders & Files
 node_modules
 .eslintcache
+
+
+## Testing
+coverage
+junit.xml
