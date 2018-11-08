@@ -20,7 +20,8 @@
     "build": "npm run build-commonjs && npm run build-esm",
     "build-commonjs": "BABEL_ENV=commonjs babel src --copy-files --out-dir commonjs --ignore '**/test' --source-maps inline",
     "build-esm": "BABEL_ENV=esm babel src --copy-files --out-dir esm --ignore '**/test' --source-maps inline",
-    "postinstall": "node scripts/generateRawTheme.js > src/raw.json && cp -r node_modules/govuk-frontend/assets/* assets/"
+    "postinstall": "node scripts/generateRawTheme.js > src/raw.json && cp -r node_modules/govuk-frontend/assets/* assets/",
+    "prepare": "npm run build"
   },
   "license": "MIT",
   "devDependencies": {
@@ -50,5 +51,8 @@
     "minimist": "^1.2.0",
     "ncp": "^2.0.0",
     "tagged-template-literals": "^1.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
