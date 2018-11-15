@@ -36,10 +36,12 @@ const Common = styled.p`
 
 Common.propTypes = {
   inset: PropTypes.bool,
+  bold: PropTypes.bool,
 };
 
 Common.defaultProps = {
   inset: false,
+  bold: false,
 };
 
 const ResponsiveCommon = styled(Common)`
@@ -57,7 +59,7 @@ const ResponsiveCommon = styled(Common)`
 `;
 
 export const L = styled(Common)`
-  ${({ theme }) => theme.typography.body.l()}
+  ${({ bold, theme }) => theme.typography.body.l(bold)}
   ${({ theme }) => theme.spacing.property('margin-bottom', 6)}
 
   & + ${Heading.L} {
@@ -72,19 +74,19 @@ export const L = styled(Common)`
 L.displayName = 'Paragraph.L';
 
 export const M = styled(ResponsiveCommon)`
-  ${({ theme }) => theme.typography.body.m()};
+  ${({ bold = true, theme }) => theme.typography.body.m(bold)};
 `;
 
 M.displayName = 'Paragraph.M';
 
 export const S = styled(ResponsiveCommon)`
-  ${({ theme }) => theme.typography.body.s()};
+  ${({ bold, theme }) => theme.typography.body.s(bold)};
 `;
 
 S.displayName = 'Paragraph.S';
 
 export const XS = styled(Common)`
-  ${({ theme }) => theme.typography.body.xs()};
+  ${({ bold, theme }) => theme.typography.body.xs(bold)};
 `;
 
 XS.displayName = 'Paragraph.XS';

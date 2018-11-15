@@ -50,6 +50,17 @@ stories.add(
 );
 
 stories.add(
+  'Bold',
+  withInfo(doc)(() => (
+    <div>
+      <Caption.M>A Medium Caption</Caption.M>
+      <Heading.M>GOV.UK M Heading</Heading.M>
+      <Paragraph.M bold>{lorem}</Paragraph.M>
+    </div>
+  ))
+);
+
+stories.add(
   'Inset',
   withInfo(doc)(() => (
     <div>
