@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-alpha.6](https://github.com/dwp/dwp-components/compare/v0.0.1-alpha.5...v0.0.1-alpha.6) (2018-11-15)
+
+
+### Features
+
+* **components/react:** implemented form components ([41b011d](https://github.com/dwp/dwp-components/commit/41b011d))
+
+
+
+
+
 ## [0.0.1-alpha.5](https://github.com/dwp/dwp-components/compare/v0.0.1-alpha.3...v0.0.1-alpha.5) (2018-11-08)
 
 
