@@ -10,14 +10,14 @@ export default {
     s: () => font(19, true),
   },
   captions: {
-    xl: () => font(27),
-    l: () => font(24),
-    m: () => font(19),
+    xl: bold => font(27, bold),
+    l: bold => font(24, bold),
+    m: bold => font(19, bold),
   },
   body: {
-    l: () => font(24),
-    m: () => font(19),
-    s: () => font(16),
-    xs: () => font(14),
+    l: bold => font(24, bold),
+    m: bold => font(19, bold),
+    s: bold => font(16, bold),
+    xs: bold => font(14, bold),
   },
 };
