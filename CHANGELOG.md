@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-alpha.7](https://github.com/dwp/dwp-components/compare/v0.0.1-alpha.6...v0.0.1-alpha.7) (2018-12-10)
+
+
+### Bug Fixes
+
+* **styles/theme:** removing camelcase 4.1.0 dependency on node ([f1ad444](https://github.com/dwp/dwp-components/commit/f1ad444))
+
+
+
+
+
 ## [0.0.1-alpha.6](https://github.com/dwp/dwp-components/compare/v0.0.1-alpha.5...v0.0.1-alpha.6) (2018-11-15)
 
 
