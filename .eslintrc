@@ -3,7 +3,9 @@
   parser: "babel-eslint",
   plugins: ["prettier"],
   rules: {
-    "prettier/prettier": "error",
+    "prettier/prettier": ["error", {
+     "endOfLine":"auto"
+   }],
     "import/no-extraneous-dependencies": "off"
   },
   env: {
