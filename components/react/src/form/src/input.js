@@ -33,8 +33,7 @@ const WithWidth = ({ width = -1 }) => {
 
 const Input = styled.input`
   ${({ theme }) => theme.typography.size(19)}
-  ${({ theme }) =>
-    theme.helpers.focus()}
+  ${({ theme }) => theme.helpers.focus()}
   box-sizing: border-box;
   width: 100%;
   height: auto;
