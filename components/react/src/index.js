@@ -37,5 +37,3 @@ export * as Table from './table';
 export { Tag } from './tag';
 
 export { Warning } from './warning';
-
-export * as Form from './form';
