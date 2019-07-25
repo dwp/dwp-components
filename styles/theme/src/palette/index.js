@@ -21,5 +21,11 @@ export default {
       hover: 'rgb(0, 105, 47)',
       shadow: 'rgb(0, 54, 24)',
     },
+    secondary: {
+      background: 'rgb(222, 224, 226);',
+      text: 'rgb(11, 12, 12)',
+      hover: 'rgb(200, 202, 203)',
+      shadow: 'rgb(133, 134, 136)',
+    },
   },
 };
