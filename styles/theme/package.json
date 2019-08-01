@@ -18,8 +18,8 @@
   ],
   "scripts": {
     "build": "npm run build-commonjs && npm run build-esm",
-    "build-commonjs": "BABEL_ENV=commonjs babel src --delete-dir-on-start --out-dir commonjs --source-maps inline",
-    "build-esm": "BABEL_ENV=esm babel src --delete-dir-on-start --out-dir esm --source-maps inline",
+    "build-commonjs": "cross-env BABEL_ENV=commonjs babel src --delete-dir-on-start --out-dir commonjs --source-maps inline",
+    "build-esm": "cross-env BABEL_ENV=esm babel src --delete-dir-on-start --out-dir esm --source-maps inline",
     "build-asset": "node scripts/generateRawTheme.js > src/raw.json && cp -r node_modules/govuk-frontend/assets/* assets/",
     "postbuild": "cp src/raw.json commonjs/ && cp src/raw.json esm/",
     "prepack": "npm run build",
@@ -41,6 +41,7 @@
     "babel-loader": "^8.0.4",
     "babel-plugin-add-react-displayname": "^0.0.5",
     "babel-runtime": "^6.26.0",
+    "cross-env": "^5.2.0",
     "node-sass": "^4.10.0",
     "sass-extract": "^2.1.0",
     "sass-extract-js": "^0.4.0"

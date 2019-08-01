@@ -23,6 +23,8 @@ stories.add('With an Icon', withInfo(doc)(() => <Button icon={iconPath}>Click he
 
 stories.add('Disabled', withInfo(doc)(() => <Button disabled>Click here</Button>));
 
+stories.add('Secondary', withInfo(doc)(() => <Button type="secondary">Click here</Button>));
+
 stories.add(
   'As a link',
   withInfo(doc)(() => (
