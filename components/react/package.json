@@ -13,8 +13,8 @@
   ],
   "scripts": {
     "build": "npm run build-commonjs && npm run build-esm && npm run size",
-    "build-commonjs": "BABEL_ENV=commonjs babel src --out-dir commonjs --ignore '**/stories','**/test' --source-maps inline",
-    "build-esm": "BABEL_ENV=esm babel src --out-dir esm --ignore '**/stories','**/test' --source-maps inline",
+    "build-commonjs": "cross-env BABEL_ENV=commonjs babel src --out-dir commonjs --ignore '**/stories','**/test' --source-maps inline",
+    "build-esm": "cross-env BABEL_ENV=esm babel src --out-dir esm --ignore '**/stories','**/test' --source-maps inline",
     "build-storybook": "build-storybook -o docs",
     "size": "size-limit",
     "storybook": "start-storybook -s .storybook/public -p 6006",
@@ -26,6 +26,7 @@
   "license": "MIT",
   "dependencies": {
     "@babel/runtime": "^7.1.5",
+    "cross-env": "^5.2.0",
     "prop-types": "^15.6.2",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
@@ -94,5 +95,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "57fd8fe1a25e3425e793544777a8d2876ecbc5fc"
 }
