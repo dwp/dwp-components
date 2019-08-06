@@ -1,6 +1,6 @@
 {
   "name": "@dwp/components-theme",
-  "version": "0.0.1-alpha.8",
+  "version": "0.0.1-alpha.9",
   "description": "CSS-in-JS Shareable Styles built upon govuk-frontend Design System",
   "bin": {
     "components-theme": "bin/run.js"
