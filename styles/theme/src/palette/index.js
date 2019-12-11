@@ -13,7 +13,7 @@ const common = keys
 export default {
   common,
   organisations: govukColoursOrganisations,
-  display: { ...govukColours, accessibleGrey: 'rgb(51, 55, 56)' },
+  display: { ...govukColours, grey0: 'rgb(51, 55, 56)' },
   buttons: {
     default: {
       background: 'rgb(0, 130, 59)',
