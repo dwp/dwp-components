@@ -20,12 +20,20 @@ const Options = styled.div`
     ${({ theme }) => theme.typography.body.m(false)};
     background-color: #fff;
     color: ${({ theme }) => theme.palette.display.blue};
-    line-height: 1;
     text-align: center;
     padding: 8px 16px;
-    margin-right: -1px;
-    border: 1px solid ${({ theme }) => theme.palette.display.blue};
+    border-style: solid;
+    border-color: ${({ theme }) => theme.palette.display.blue};
+    border-width: 1px 0px 1px 1px;
     transition: all 0.3s ease-in-out;
+  }
+
+  label:last-child {
+    border-right-width: 1px;
+  }
+
+  label {
+    line-height: 22px !important;
   }
 
   label:hover {
@@ -50,14 +58,16 @@ const OptionsToggle = ({ options, onSelected }) => {
           <input
             type="radio"
             id={value}
-            name="switch-two"
+            name="toggle-options"
             checked={value === seletedItem}
             onChange={() => {
               setSeletedItem(value);
               onSelected(value);
             }}
           />
-          <label htmlFor={value}>{text}</label>
+          <label htmlFor={value} id={`options_${value}`}>
+            {text}
+          </label>
         </React.Fragment>
       ))}
     </Options>

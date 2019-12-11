@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-alpha.10](https://github.com/dwp/dwp-components/compare/v0.0.1-alpha.9...v0.0.1-alpha.10) (2019-08-06)
+    
+### Features
+Implemented Toggle Options 
+
+## [0.0.1-alpha.9](https://github.com/dwp/dwp-components/compare/v0.0.1-alpha.8...v0.0.1-alpha.9) (2019-08-06)
+    
+**Note:** Version bump only
+
+## [0.0.1-alpha.8](https://github.com/dwp/dwp-components/compare/v0.0.1-alpha.7...v0.0.1-alpha.8) (2019-08-06)
+
+**Note:** Version bump only for package @dwp/components-react
+
 ## [0.0.1-alpha.7](https://github.com/dwp/dwp-components/compare/v0.0.1-alpha.6...v0.0.1-alpha.7) (2018-12-10)
 
 **Note:** Version bump only for package @dwp/components-react
