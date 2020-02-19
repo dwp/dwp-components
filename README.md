@@ -40,3 +40,4 @@ Please also note that all repositories under the styled-components organization 
 * [React](/components/react)
 
 ## Updating Version
+1.0.3
