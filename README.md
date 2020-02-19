@@ -38,3 +38,5 @@ Please also note that all repositories under the styled-components organization 
 
 ## Component Packages
 * [React](/components/react)
+
+## Updating Version
