@@ -1,11 +1,3 @@
-#Westorm/Idea files
-.idea/
-*.iml
-*.ipr
-*.iws
-out
-gen
-
 ## Local Development Folders & Files
 node_modules
 .eslintcache
