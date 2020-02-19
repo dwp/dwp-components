@@ -3,13 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## v1.0.0 Release
+
 ## [0.0.1-alpha.10](https://github.com/dwp/dwp-components/compare/v0.0.1-alpha.9...v0.0.1-alpha.10) (2019-08-06)
-    
+
 ### Features
-* **components/react:** Implemented Toggle Options 
+* **components/react:** Implemented Toggle Options
 
 ## [0.0.1-alpha.9](https://github.com/dwp/dwp-components/compare/v0.0.1-alpha.8...v0.0.1-alpha.9) (2019-08-06)
-    
+
 **Note:** Version bump only
 
 ### Features
