@@ -47,7 +47,7 @@
     "sass-extract-js": "^0.4.0"
   },
   "dependencies": {
-    "@babel/runtime": "^7.1.5",
+    "@babel/runtime": "^7.26.10",
     "camelcase": "^5.0.0",
     "chalk": "^2.4.1",
     "govuk-frontend": "^2.3.0",
